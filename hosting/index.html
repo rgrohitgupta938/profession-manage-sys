@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profession management System</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>New Employees</h1>
+    </header>
+    <main>
+      <form id="empForm">
+        <div class="row">
+          <div class="input-sec">
+            <label for="name">Name</label>
+            <br />
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="input-sec">
+            <label for="profession">Profession</label>
+            <br />
+            <input type="text" name="profession" id="profession" />
+          </div>
+          <div class="input-sec">
+            <label for="age">Age</label>
+            <br />
+            <input type="text" name="age" id="age" />
+          </div>
+        </div>
+        <button class="btn" id="submit" type="submit">Add user</button>
+      </form>
+      <div class="error" id="error">
+        Error : Please Make sure All the fields are filled before adding in an
+        employee !
+      </div>
+      <div class="success" id="success">Success : Employee Added!</div>
+      <p class="emp-text">Added Employees</p>
+      <p id="empCount" class="emp-count">You have 0 Employees.</p>
+      <ul id="employeeList"></ul>
+    </main>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>
